@@ -1,11 +1,11 @@
 name: integration
 run-name:  Pipeline de CI
 on:
-  push:
-    branches:
-      - dev
+  # push:
+  #   branches:
+  #     - dev
   
-  #workflow-dispatch:
+  workflow-dispatch:
 
 jobs:
   build:
