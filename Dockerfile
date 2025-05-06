@@ -1,7 +1,7 @@
 FROM nginx:alpine
 
-RUN rm -rf /usr/share/ngnix/html/*
+RUN rm -rf /usr/share/nginx/html/*
 
-COPY . /usr/share/ngnix/html
+COPY . /usr/share/nginx/html
 
 EXPOSE 80
