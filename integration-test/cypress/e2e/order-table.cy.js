@@ -1,12 +1,11 @@
-describe('Ordenação da Tabela de Cursos', () => {
+describe('Entrar em Login de voltar a Página Inicial', () => {
     beforeEach(() => {
-        cy.visit('https://ibqrz-devops-ci-2402805.azurewebsites.net/cursos.html');
+        cy.visit('https://ibqrz-devops-ci-2402805.azurewebsites.net/login');
     });
 
-    it('Deve ordenar cursos em ordem alfabética', () => {
+    it('Deve voltar a página inicial', () => {
+        cy.get('div a').contains('Cosmovisão').click();
         cy.get('th').contains('Curso').click();
-        cy.get('th').contains('Curso').click();
-        cy.get('table tbody tr:first-child td:first-child')
-          .should('contain', 'Administração');
+        cy.url().should('include', 'index.html');
     });
 });
