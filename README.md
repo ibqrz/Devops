@@ -4,7 +4,7 @@
 
 <p align="justify">
 
-Cosmovisão é um site que simula uma empresa fictícia, que conecta entusiastas e pesquisadores, com o viés de divulgação científica e exploração do universo.   
+Cosmovisão é um site que simula uma empresa fictícia, que conecta entusiastas e pesquisadores, com o viés de divulgação científica e exploração do universo.   \\\\\
 
 </p>
 
