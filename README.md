@@ -1,4 +1,4 @@
-<img id="descrição" src="./src/images/cosReadme.png" align="center"></img>
+<img id="descrição" src="./src/images/cosReadme.png" justify-content= "center"></img>
 
 # :stars: Cosmovisão 
 
