@@ -4,7 +4,7 @@
 
 <p align="justify">
 
-Cosmovisão é um site que simula uma empresa fictícia, que conecta entusiastas e pesquisadores, com o viés de divulgação científica e exploração do universo.   \\\\\
+Cosmovisão é um site que simula uma empresa fictícia, que conecta entusiastas e pesquisadores, com o viés de divulgação científica e exploração do universo.   
 
 </p>
 
@@ -45,7 +45,7 @@ Cosmovisão é um site que simula uma empresa fictícia, que conecta entusiastas
 
 - O checkout do código, onde é utilizada a action 'actions/checkout@v4' para fazer o download do código do repositório para o ambiente de execução. A opção 'fetch-depth: 0' garante que um clone completo do repositório, incluindo todo o histórico de commits, seja realizado. 
 
-- A análise de código com SonarQube, realiza a análise estática do código utilizando a action 'SonarSource/sonarqube-scan-action@v5'.</p>
+- A análise de código com SonarQube é realizada utilizando a action 'SonarSource/sonarqube-scan-action@v5'.</p>
 
 <p>Para se comunicar com o servidor SonarQube, são definidas duas variáveis de ambiente:
 
