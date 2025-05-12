@@ -1,4 +1,4 @@
-<p id="descrição"></p>
+<img id="descrição" src="./src/images/cosReadme.png"></img>
 
 # :stars: Cosmovisão 
 
