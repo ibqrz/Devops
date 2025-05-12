@@ -4,10 +4,11 @@ describe('Página Inicial', () => {
     cy.contains('Cosmovisão')
   });
 
-  it('Deve navegar até a página de Cadastro', () => {
+  it('Deve navegar até Sobre', () => {
     cy.visit('https://ibqrz-devops-ci-2402805.azurewebsites.net/index.html')
     cy.get('nav div ul li a.about_us').contains('Sobre nós').should('be.visible');
     cy.wait(1000); 
     cy.get('nav div ul li a.about_us').contains('Sobre nós').click();
+    cy.url().should('include', 'index.html');
   });
 })
