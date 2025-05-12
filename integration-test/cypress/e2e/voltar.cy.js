@@ -4,7 +4,7 @@ describe('Entrar em Login de voltar a Página Inicial', () => {
     });
 
     it('Deve voltar a página inicial', () => {
-        cy.get('div a').contains('voltar').click();
+        cy.get('div.voltar a').contains('voltar').click();
         cy.url().should('include', 'index.html');
     });
 });
