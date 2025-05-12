@@ -26,12 +26,15 @@ header{
 .logo p{
     font-family: "Lilita One", sans-serif;
     font-size:25px;
+
 }
 
 .menu-superior{
     display: flexbox;
     justify-content: space-around;
     gap: 300px;
+    align-items: center;
+
 }
 
 header nav {
@@ -64,6 +67,7 @@ header li a{
 header li a:hover{
     text-decoration: underline;
     cursor: pointer;
+    color: white;
 
 }
 
@@ -77,6 +81,7 @@ header li a:hover{
 .nav-dados a:hover{
     text-decoration: underline;
     cursor: pointer;
+    color: white;
 }
 
 
@@ -95,6 +100,7 @@ header li a:hover{
 .btn-cadastro:hover{
     background-color: #e75fb3;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* Introsução index*/
@@ -228,16 +234,18 @@ header li a:hover{
     grid-template-rows: repeat(2, auto);
     gap: 30px;
     margin: 60px 90px;
+    justify-content: center;
 }
 
 .container-card{
     display: flex;
-    justify-items: baseline;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
     gap: 10px;
     border: 1px solid #1D0A4A;
     border-radius: 10px;
-    padding: 15px;
+    padding: 8px;
     background-color: rgba(198, 180, 221, 0.5);
     
 }
@@ -246,11 +254,18 @@ header li a:hover{
     text-decoration: none;
     color: #1D0A4A;
     font-weight: 600;
+    padding: 15px;
+    align-items: center;
+}
+
+.container-card a:hover{
+    color: #1D0A4A;
 }
 
 .container-card:hover{
     background-color: #c0addc;
     cursor: pointer;
+
 }
 
 /*  section newsletter */
@@ -264,12 +279,12 @@ header li a:hover{
 }
 
 .container-newsletter-description{
-    width: 800PX;
+    width: 800px;
     padding: 40px 0;
 }
 
 .container-newsletter-description p{
-    padding: 12px 0;
+    padding: 10px 0;
     font-size: 18px;
 }
 
@@ -282,12 +297,16 @@ header li a:hover{
 
 /* FAQ SECTION*/
 .section-faq{
-    height: 750px;
-    padding: 50px 150px;
+    height: 550px;
+    padding: 70px 150px;
     background-color: #EAE0FA;
     color: #000;
     font-family: "Instrument Sans", sans-serif;
     
+}
+
+.faq{
+    color: #1D0A4A;
 }
 
 .quetsions{
@@ -342,6 +361,7 @@ footer li a{
 footer li a:hover{
     text-decoration: underline;
     cursor: pointer;
+    color:#FFF;
 
 }
 
@@ -421,7 +441,7 @@ footer li a:hover{
 }
 
 .container-login input:focus{
-    background-color: #d1d1d1;
+    background-color: #EAE0FA;
     color: #1D0A4A;
     outline: none;
 }
