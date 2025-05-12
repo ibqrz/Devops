@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #681DDA;
+    color: #fff;
+    justify-content: space-between;
+    padding: 30px 100px;
+
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo p{
+    font-family: "Lilita One", sans-serif;
+    font-size:25px;
+}
+
+.menu-superior{
+    display: flexbox;
+    justify-content: space-around;
+    gap: 300px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 15px;
+
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    padding: 8px;
+
+}
+
+header li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+
+}
+
+header li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+
+.nav-dados a{
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.nav-dados a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.btn-cadastro{
+    background-color: #D4429C;
+    padding: 7px;
+    width: 110px;
+    height: 30px;
+    border: none;
+    color: #FFF;
+    border-radius: 30px;
+    font-weight: 600;
+
+}
+
+.btn-cadastro:hover{
+    background-color: #e75fb3;
+    cursor: pointer;
+}
+
+/* Introsução index*/
+.hero-introduction{
+    background-color: #681DDA;
+    position: relative;
+    height: 550px;
+    padding: 10px;
+}
+
+.hero-description{
+    color: #fff;
+    margin-left: 130px;
+    width: 700px;   
+}
+
+.hero-tittle{
+    font-size: 50px;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    margin-top: 90px;
+    font-weight: 700;
+    text-shadow: -1px -1px 0 #7F7F7F, 1px -1px 0 #7F7F7F, -1px 1px 0 #7F7F7F, 1px 1px 0 #7F7F7F;
+}
+
+.hero-subtittle{
+    font-size: 16px;
+    width: 40%;
+    margin-top: 20px;
+    text-align: justify;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+.img-hero{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-hero-cta{
+    padding: 10px;
+    width: 150px;
+    background-color: #D4429C;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.btn-hero-cta:hover{
+    background-color: #e75fb3;
+    cursor: pointer;
+}
+
+/* SOBRE NÓS*/ 
+.container-section_about-us{    
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.about_us-containers-images{
+    padding: 20px;
+    margin: 10px;
+}
+
+.sobre-nos{
+    padding: 20px;
+    margin: 50px 20px;
+    width: 40%;
+    text-align: justify;
+}
+
+.sobre-nos h1{
+    text-align: center;
+    padding-bottom:20px;
+}
+
+/* section explorar */
+.section-about-us{
+    background-color: rgb(255, 255, 255);
+    height: 740px;
+    padding: 50px 100px;
+    font-family: "Instrument Sans", sans-serif;
+    text-align: justify;
+
+}
+
+.container-section_about-us{
+    display: flexbox;
+    flex-direction: row;
+
+}
+
+.sobre-nos h1{
+    color:#681DDA;
+}
+
+.sobre-nos span{
+    font-weight: 600;
+    color: #D4429C;
+
+}
+
+
+/*  section saiba mais*/
+.section-saiba-mais{
+    height: 570px;
+    background-color: #EAE0FA;
+    padding: 50px 100px;
+    font-family: "Instrument Sans", sans-serif;
+
+}
+
+.saiba-mais p{
+    margin: 30px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 80px;
+}
+
+.saiba-mais span{
+    font-weight: 800;
+    color: #1D0A4A;
+}
+
+.conteiner-cards-subtupicos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+    margin: 60px 90px;
+}
+
+.container-card{
+    display: flex;
+    justify-items: baseline;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #1D0A4A;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgba(198, 180, 221, 0.5);
+    
+}
+
+.container-card a{
+    text-decoration: none;
+    color: #1D0A4A;
+    font-weight: 600;
+}
+
+.container-card:hover{
+    background-color: #c0addc;
+    cursor: pointer;
+}
+
+/*  section newsletter */
+.section-newsletter{
+    height: 500px;
+    padding: 50px 150px;
+    background-color: #681DDA;
+    color: #fff;
+    font-family: "Instrument Sans", sans-serif;
+    position: relative;
+}
+
+.container-newsletter-description{
+    width: 800PX;
+    padding: 40px 0;
+}
+
+.container-newsletter-description p{
+    padding: 12px 0;
+    font-size: 18px;
+}
+
+
+.img-newsletter{
+    position: absolute;
+    right: 0;
+    bottom: -190px;
+}
+
+/* FAQ SECTION*/
+.section-faq{
+    height: 750px;
+    padding: 50px 150px;
+    background-color: #EAE0FA;
+    color: #000;
+    font-family: "Instrument Sans", sans-serif;
+    
+}
+
+.quetsions{
+    margin: 20px;
+
+}
+
+.quetsions h4{
+    color: #10052b;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #681DDA;
+    color: #fff;
+    justify-content: space-between;
+    padding: 30px 100px;
+
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 15px;
+
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    padding: 8px;
+    gap: 8px;
+
+}
+
+footer li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+
+}
+
+footer li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+
+/* PAGINA DE LOGIN */
+
+.voltar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 20px;
+}
+.voltar a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 18px;
+    padding: 15x;
+}
+
+.voltar a:hover{
+    text-decoration: underline;
+}
+
+.container-login{
+    height: 580px;
+    width: 540px;
+    background-color: white;
+    border-radius: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    font-family: "Instrument Sans", sans-serif;
+    justify-content: center;
+    justify-items: center;
+    color: #17141f;
+}
+
+.lg-login{
+    margin-top: 35px;
+}
+
+.container-login h2{
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+.subtittle-login{
+    padding: 20px;
+    margin: 0 40px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.container-login form{
+    justify-content: center;
+    justify-items: center;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.container-login input{
+    justify-content: center;
+    width: 80%;
+    border: 1px solid #10052b;
+    border-radius: 120px;
+    height: 30px;
+    padding: 12px;
+    margin: 8px 0; 
+    color: #1D0A4A;
+    font-size: 16px;
+
+}
+
+.container-login input:focus{
+    background-color: #d1d1d1;
+    color: #1D0A4A;
+    outline: none;
+}
+
+.container-login input :placeholder-shown{
+    color: #080216;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:  12px 30px;
+
+}
+
+form p{
+    font-weight: 700;
+    margin-top: 8px;
+    margin-left: 200px;
+}
+
+form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D0A4A;
+    border-radius: 120px;
+    border: none;
+    margin: 20px 0;
+    height: 50px;
+    width: 360px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+
+}
+
+form button:hover{
+    background-color: #10052b;
+}
+
+.not-member a{
+    text-decoration: none;
+    color: #10052b;
+    font-weight: 600;
+    padding:  0 5px;
+}
+
+.not-member a:hover{
+    font-weight: 800;
+    text-decoration: underline;
+}
+
