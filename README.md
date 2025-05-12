@@ -89,9 +89,8 @@ Cosmovisão é um site que simula uma empresa fictícia, que conecta entusiastas
 │   │
 │   └───cypress
 │       ├───e2e
-│       │       filters-course.cy.js
-│       │       order-table.cy.js
 │       │       pag-inicial.cy.js
+│       │       voltar.cy.js
 │       │
 │       ├───fixtures
 │       │       example.json
