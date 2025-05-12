@@ -1,4 +1,4 @@
-<img id="descrição" src="./src/images/cosReadme.png"></img>
+<img id="descrição" src="./src/images/cosReadme.png" align="center"></img>
 
 # :stars: Cosmovisão 
 
