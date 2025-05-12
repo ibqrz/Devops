@@ -6,7 +6,7 @@ describe('Página Inicial', () => {
 
   it('Deve navegar até a página de Cadastro', () => {
     cy.visit('https://ibqrz-devops-ci-2402805.azurewebsites.net/index.html')
-    cy.get('nav div a').contains('Cadastro').click();
+    cy.get('heather nav div a').contains('Cadastro').click();
     cy.url().should('include', 'cadastro.html');
   });
 })
