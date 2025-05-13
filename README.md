@@ -1,5 +1,7 @@
 <p id="descrição"></p>
 
+<img src="./src/images/logoReadme.png" alt="logo" width="600px">
+
 # :stars: Cosmovisão 
 
 <p align="justify">
