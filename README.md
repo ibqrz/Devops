@@ -1,12 +1,12 @@
 <p id="descrição"></p>
 
-<img src="./src/images/logoReadme.png" alt="logo" width="600px">
+<img src="./src/images/logoReadme.png" alt="logo" width="1000px">
 
 # :stars: Cosmovisão 
 
 <p align="justify">
 
-Cosmovisão é um site que simula uma empresa fictícia, que conecta entusiastas e pesquisadores, com o viés de divulgação científica e exploração do universo.   
+Cosmovisão é um site que simula uma empresa fictícia, que foi criado com o intuito de juntar entusiastas e pesquisadores, com o viés de divulgação científica e exploração do universo.   
 
 </p>
 
@@ -60,6 +60,27 @@ Cosmovisão é um site que simula uma empresa fictícia, que conecta entusiastas
 - Dsonar.projectName=aula-devops -> Define o nome do projeto que será exibido na interface do SonarQube.
 - Dsonar.projectVersion=1.0.0 -> Define a versão do projeto sendo analisado
 - Dsonar.sources=. -> Indica que o diretório raiz do repositório (.) contém o código fonte a ser analisado.</p>
+
+
+<p>Já o workflow de Entrega Contínua (CD) tem como ponto de início o 'push' de código para a branch 'main' do repositório. Ele recebe o nome de 'continuous deployement', e sua execução tem a identificação de 'Deploy do App'.</p>
+
+<p>A primeira coisa que acontece é a etapa de 'deploy'. Nessa etapa, o GitHub pega o código mais recente, faz login no Docker Hub, constrói uma imagem Docker da aplicação, e envia essa imagem para o Docker Hub.</p>
+
+<p>As credenciais de login do Docker Hub são adicionadas em secrets do GitHub:
+
+- username: ${{ secrets.DOCKER_USER }} -> Obtém o nome de usuário do Docker Hub.
+- password: ${{ secrets.DOCKER_PASSWORD }} -> Obtém a senha do Docker Hub.</p>
+
+<p>Depois, na imagem é a implantada um serviço chamado 'Azure Web App', que é onde a aplicação fica rodando na internet. 
+
+Para configurar o deploy no Azure:
+
+- app-name: ibqrz-devops-ci-2402805 -> Nome do Azure Web App.
+- publish-profile: ${{ secrets.PUBLISH_PROFILE }} -> Perfil de publicação do Azure Web App.</p>
+
+<p>Assim que a aplicação é atualizada e o 'deploy' é realizado com sucesso, o site passa para a etapa de testes 'e2e-testing'. Aqui, é feito o chekout de código, configura o Node.js, instala as ferramentas de teste (Cypress), e então executa os testes de ponta a ponta, simulando como um usuário real interagiria com a aplicação, garantindo que tudo está funcionando corretamente.</p>
+
+
 
 
 <p id="mapa"></p>
