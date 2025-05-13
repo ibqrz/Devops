@@ -66,17 +66,11 @@ Cosmovisão é um site que simula uma empresa fictícia, que conecta entusiastas
 <!-- usar comando 'tree /F' no terminal -->
 ```.
 │   .gitignore
-│   astronomia.html
 │   cadastro.html
-│   cosmologia.html
 │   Dockerfile
-│   estrels-galaxias.html
-│   exploracao-espacial.html
 │   index.html
 │   login.html
-│   observacao-ceu.html
 │   README.md
-│   sistema-solar.html
 │
 ├───.github
 │   └───workflows
@@ -104,27 +98,35 @@ Cosmovisão é um site que simula uma empresa fictícia, que conecta entusiastas
     │       main.css
     │       style.css
     │
-    └───images
-            alien.png
-            arrow.png
-            arrow1.png
-            bj-login.png
-            black-logo.png
-            cometa.png
-            foguete.png
-            galaxy-view.png
-            ic_baseline-tiktok.png
-            img1.png
-            img2.png
-            img3.png
-            img4.png
-            livro-de-astronomia.png
-            logo.png
-            marte.png
-            planet-hero.png
-            prime_twitter.png
-            simple-icons_instagram.png
-            telescopico (1).png
+    ├───images
+    │       alien.png
+    │       arrow.png
+    │       arrow1.png
+    │       bj-login.png
+    │       black-logo.png
+    │       cometa.png
+    │       foguete.png
+    │       galaxy-view.png
+    │       ic_baseline-tiktok.png
+    │       img1.png
+    │       img2.png
+    │       img3.png
+    │       img4.png
+    │       livro-de-astronomia.png
+    │       logo.png
+    │       marte.png
+    │       planet-hero.png
+    │       prime_twitter.png
+    │       simple-icons_instagram.png
+    │       telescopico (1).png
+    │
+    └───pages
+            astronomia.html
+            cosmologia.html
+            estrels-galaxias.html
+            exploracao-espacial.html
+            observacao-ceu.html
+            sistema-solar.html
 ```
 
 <p id="colaboradores"></p>
