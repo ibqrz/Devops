@@ -78,7 +78,7 @@ Para configurar o deploy no Azure:
 - app-name: ibqrz-devops-ci-2402805 -> Nome do Azure Web App.
 - publish-profile: ${{ secrets.PUBLISH_PROFILE }} -> Perfil de publicação do Azure Web App.</p>
 
-<p>Assim que a aplicação é atualizada e o 'deploy' é realizado com sucesso, o site passa para a etapa de testes 'e2e-testing'. Aqui, é feito o chekout de código, configura o Node.js, instala as ferramentas de teste (Cypress), e então executa os testes de ponta a ponta, simulando como um usuário real interagiria com a aplicação, garantindo que tudo está funcionando corretamente.</p>
+<p>Assim que a aplicação é atualizada e o 'deploy' é realizado com sucesso, o site passa para a etapa de testes 'e2e-testing'. Aqui, é feito o chekout de código, a configuração do Node.js, a instalação as ferramentas de teste (Cypress), e então são executados os testes de ponta a ponta, simulando como um usuário real interagiria com a aplicação, garantindo que tudo está funcionando corretamente.</p>
 
 
 
